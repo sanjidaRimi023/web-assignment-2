@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.hide{
+    display: none;
+}
+
 /* font-name */
 .quicksand-font {
     font-family: "Quicksand", serif;
@@ -9,27 +17,40 @@
     font-style: normal;
  }
 
-  .raleway-font {
+.raleway-font {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-style: normal;
   }
 /* header-section */
 header{
-    max-width: 1280px;
-    margin: 0 auto;
-
+    max-width: 1160px;
+    margin-left: 80px;
+}
+.marque{
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #FC5185;
 }
 .navbar{
+    width: 1280px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
 } 
+hr{
+    display: none;
+}
 .nav-1{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+.menu-icon{
+    display: none;
 }
 .nav-img{
     width: 64px;
@@ -37,14 +58,14 @@ header{
 }
 .nav-title{
     color: rgb(17, 17, 17);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
 }
-ul{
+.nav-list-item{
     display: flex;
     list-style: none;
     gap: 30px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 .list-1{
@@ -65,63 +86,83 @@ ul{
     background-color: rgb(254, 163, 1);
     padding:10px;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
-/* banner-section */
-main{
-    max-width: 1280px;
-    margin: 0 auto;
+hr{
+    display: none;
 }
+/* banner section */
 .banner-section{
+    width: 1280px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .banner-title{
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 24px;
 }
 .banner-description{
     color: rgb(17, 17, 17);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 .banner-btn{
+    width: 197px;
+    height: 50px;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     border: none;
     border-radius: 12px;
     padding: 10px;
     background-color: rgb(17, 17, 17);
 }
-/* .banner-section-2 */
-.banner-2{
-    width: 1160px;
-    background-image: url("../assets/bg.png");
-    height: 879px;
-    padding: 60px 0px 60px 0px;
+.banner-img{
+    width: 470px;
+    height: 575px;
+}
 
+
+/* banner-section */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* .banner-section-2 */
+.banner-section-2{
+    max-width: 1440px;
+    background-image: url("../assets/bg.png");
+    /* height: 779px; */
+    padding: 60px 0px 60px 0px;
+    margin-left: 80px;
+}
+.banner-2{
+    max-width: 1160px; 
+    
 }
 .banner2-name{
     color: rgb(0, 0, 0);
-    font-size: 46px;
+    font-size: 2.87rem;
     font-weight: 700;
+    margin-left: 100px;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
 }
 .banner-box{
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
 }
 .box{
     border-radius: 19px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 367.8px;
-    height: 476.78px;
+    width: 395px;
+    height: 475px;
 }
 .box-1{
     background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
@@ -148,13 +189,13 @@ main{
 .box-title{
     color: rgb(32, 32, 32);
     font-family: Quicksand;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .box-description{
     color: rgb(128, 128, 128);
     font-family: Raleway;
-    font-size: 15.09px;
+    font-size: 1rem;
     font-weight: 500;
     margin: 30px;
 }
@@ -162,7 +203,7 @@ main{
     border: none;
     background: white;
     font-family: Quicksand;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
 }
 .box-btn1{
@@ -176,6 +217,7 @@ main{
 }
 .banner-btn2{
     margin-top: 80px;
+    margin-left: 100px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -191,3 +233,293 @@ main{
     border-radius: 50%;
 }
 /* story-section */
+.story-section{
+    max-width: 1440px;
+    height: 950px;
+    margin: 0 auto;
+    background-image: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.story-part{
+    max-width: 1140px;
+    margin: 78px;
+}
+.story-title{
+    text-align: center;
+    margin-left: 140px;
+    color: rgb(0, 0, 0);
+    font-size: 2.87rem;
+    font-weight: 700;
+}
+.card-container{
+    display: grid;
+    gap: 60px;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card1 card4 card5"
+    ;
+}
+.card-1{
+    grid-area: card1;
+    width: 540.27px;
+    height: 630.52px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.card1-img{
+    width: 540px;
+    height: 337px;
+    border-radius: 16px 16px 0px 0px;
+}
+.card1-btn{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px;
+    border: none;
+    border-radius: 48px;
+    background-color: rgb(60, 216, 232);
+}
+.card-2{
+    grid-area: card2;
+    width: 291px;
+    height: 300px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;  
+}
+.card-img{
+    width: 291px;
+    height: 177px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card-3{
+    grid-area: card3;
+    width: 291px;
+    height: 300px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.card-4{
+    grid-area: card4;
+    width: 291px;
+    height: 300px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.card-5{
+    grid-area: card5;
+    width: 291px;
+    height: 300px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.card-btn{
+    background-color: rgb(93, 88, 240);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 48px;
+    font-size: 0.96rem;
+    font-weight: 400;
+    padding: 5px;
+
+}
+.card-content{
+    padding: 30px;
+}
+.card1-title{
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    font-weight: 700; 
+}
+.card1-description{
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.card-description{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.button-position{
+    position: absolute;
+    top: 159px;
+    left: 30px;
+}
+.button-position-cd1{
+    position: absolute;
+    top: 315px;
+    left: 38px;
+}
+.view-btn > button{
+    width: 197px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.view-btn{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 140px;
+}
+
+
+
+/* footer section */
+.footer-section{
+    max-width: 1440px;
+    padding: 75px;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 69, 182);
+    display: flex;
+    gap: 250px;
+  
+}
+/* .footer-section{
+    display: flex;
+    gap: 250px;
+} */
+.footer-clm{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.ftr-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.ftr-list-name{
+    font-size: 1.25rem;
+    font-weight: 700; 
+}
+.footer-list{
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.footer-name2{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Responsive section */
+@media screen and (max-width : 576px) {
+    .nav-title,
+    .nav-2,
+    .nav-3{
+        display: none;
+    }
+    header{
+        width: calc(100% - 40px);
+        margin: 20px;
+    }
+    .navbar{
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+    }  
+    hr{
+        border-bottom: 1px solid rgb(254, 163, 1);
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        border: none;
+        font-size: 3rem;
+        background-color: white;
+        color: rgb(17, 17, 17);
+    }
+    .banner-section{
+        width: calc(100% - 40px);
+        margin: 20px;
+        flex-direction: column-reverse;
+    }
+    
+    .banner-title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .banner-1{
+        text-align: center;
+    }
+    .banner-btn{
+        font-size: 1rem;
+    }
+    /* .banner-2{
+        width: calc(100% - 40px);
+    }
+    .banner-section-2{
+        width: calc(100% - 40px);
+    } */
+    
+    .banner-box{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main{
+        width: calc(100% - 40px);
+        margin: 20;
+    }
+    .banner2-name{
+        font-size: 2rem;
+        margin: 0;
+        padding-right: 50px;
+    }
+    .hide-rs{
+        display: none;
+    }
+    body{
+        height: 100%;
+    }
+    .card-1{
+        display: none;
+    }
+    /* our story */
+    .story-section{
+        width: 100%;
+    }
+    .story-title, .view-btn{
+        font-size: 2rem;
+        margin: 0;
+    }
+    .card-container{
+        flex-direction: column;
+        justify-content: center;
+        grid-template-areas: 
+        "card2 card3"
+        "card4 card5"
+        ;
+        gap: 10px;
+    }
+    /* footer section */
+    footer{
+        width: calc(100% - 40px);
+        margin: 20;
+    }
+    .footer-section{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .marque{
+        width: 50%;
+        font-size: 1.25rem;
+        margin-top: 5px;
+    }
+}
